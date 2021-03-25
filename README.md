@@ -26,3 +26,27 @@ Choisissez un mot de passe administrateur et selectionnez l'utilisation **locale
 <img src="assets/plexlogo.jpg" width="562" height="230">
 
 Nous allons mainteannt procéder à l'installation de [plex](https://www.plex.tv/)
+
+Rendez vous dans la section "Containers" de portainer ![](assets/containers.png)
+
+Pour savoir quelles variables d'environnement utiliser, utilisez la [page wiki linuxserver plex](https://hub.docker.com/r/linuxserver/plex)
+
+Pour ma part, j'ai créer un volume pour stocker mes données (Portainer -> Volumes -> Create)
+Vous pouvez également effectuer un *bind* qui attribuera un dossier dans le conteneur a un dossier en local.
+
+| Env variable | Value |
+|--------------|-------|
+| VERSION      | docker|
+
+
+| Volume       |  Value                | Type
+|--------------|-----------------------|------
+| /config      | /home/pi/.config      | Volume
+| /tv          | /home/pi/media/tv     | Volume
+| /movies      | /home/pi/media/movies | Volume
+
+Si vous ne savez pas quoi remplir, ne vous en faites pas. Portainer laisse la possibilitée de modifier une conteneur existant.
+
+Lancez maintenant Plex et rendez-vous sur [localhost:32400/web](http://localhost:32400/web) pour configurer la configuration de plex. Créez un compte et ajoutez vos dossiers media dans la librairie plex. 
+Vous pouvez maintenant rajouter du contenu en local pour tester que plex fonctionne correctement.
+
