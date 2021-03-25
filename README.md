@@ -10,19 +10,19 @@ Ce workshop est divisé en deux parties. La première concerne l'installation
 
 ## Partie 1 : Portainer et Plex
 ### 1 - Portainer
-![](assets/portainerlogo.png)
+<img src="assets/portainerlogo.png" width="562" height="230">
 
 **Portainer** est un outil de gestion de containers. Nous allons l'utiliser pour gérer les conteneurs que nous allons créer dans le futur.
 
 Tout d'abord, installez portainer en suivant le [portainer quick start](https://documentation.portainer.io/v2.0/deploy/ceinstalldocker/)
 
-Ensuite, rendez vous [localhost:9000](localhost:9000) (ou le port que vous avez spécifié.)
+Ensuite, rendez vous [localhost:9000](http://localhost:9000) (ou le port que vous avez spécifié.)
 
-Choisissez un mot de passe administrateur et selectionnez l'utilisation de gestion de containers.
+Choisissez un mot de passe administrateur et selectionnez l'utilisation **locale**.
 
 ✨ **Voilà !** ✨Vous avez mainteannt une installation fonctionelle de portainer. 🐋
 
 ### 2 - Plex
-![](assets/plexlogo.jpg)
+<img src="assets/plexlogo.jpg" width="562" height="230">
 
 Nous allons mainteannt procéder à l'installation de [plex](https://www.plex.tv/)
