@@ -1,3 +1,5 @@
+![](assets/mynetflix.png)
+
 # Workshop My Netflix part. 1
 
 *Ce workshop a pour but de vous familiariser avec Docker et Portainer en mettant en place un serveur Plex pour pouvoir visionner des medias téléchargés au préalable grâce à un Docker transmission.*
