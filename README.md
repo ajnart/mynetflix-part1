@@ -1,15 +1,18 @@
 ![](assets/mynetflix.png)
 
-# Workshop My Netflix part. 1
+# Workshop MyNetflix part. 1
 
 *Ce workshop a pour but de vous familiariser avec Docker et Portainer en mettant en place un serveur Plex pour pouvoir visionner des medias téléchargés au préalable grâce à un Docker transmission.*
 
-**N'hésitez pas à star ⭐ le repo si vous avez aimé ce workshop!** ![](https://img.shields.io/github/stars/ajnart/mynetflix-part1?label=%E2%AD%90&style=for-the-badge?branch=master&kill_cache=1")
+**N'hésitez pas à star ⭐ ce repo si vous avez aimé le workshop!** ![](https://img.shields.io/github/stars/ajnart/mynetflix-part1?label=%E2%AD%90&style=for-the-badge?branch=master&kill_cache=1")
 
-Ce workshop est divisé en deux parties. La première concerne l'installation d'un conteneur Docker portainer; le déploiement d'un serveur de distribution de média Plex et le déploiement d'une interface de téléchargement de torrents grâce à transmission.
+Ce workshop est divisé en deux parties.  
+1️⃣ La première concerne l'installation d'un conteneur Docker portainer; le déploiement d'un serveur de distribution de média Plex et le déploiement d'une interface de téléchargement de torrents grâce à transmission.
 
-Si vous voulez prendre économiser un peu de temps, vous pouvez pré-télécharger les images que nous allons utiliser grâce aux commandes:
-``docker pull linuxserver/plex``
+2️⃣ La seconde partie concerne la mise en place d'un "stack" via Dokcer-compose pour voir monter de dé-monter facilement tout nos conteneurs en une seule commande et l'installation de **sonarr/radarr/jackett** pour automatiser le téléchargement de nos médias.
+
+>Si vous voulez prendre économiser un peu de temps, vous pouvez pré-télécharger les images que nous allons utiliser grâce aux commandes:
+``docker pull linuxserver/plex``  
 ``docker pull linuxserver/transmission``
 
 ## Partie 1 : Portainer et Plex
@@ -36,8 +39,8 @@ Rendez-vous dans la section "Containers" de portainer ![](assets/containers.png)
 
 Pour savoir quelles variables d'environnement utiliser, utilisez la [page wiki linuxserver plex](https://hub.docker.com/r/linuxserver/plex)
 
-Pour ma part, j'ai créée un volume pour stocker mes données (Portainer -> Volumes -> Create)
-Vous pouvez également effectuer un *bind* qui attribuera un dossier dans le conteneur a un dossier en local.
+Vous pouvez créer un volume pour stocker vos données (Portainer -> Volumes -> Create)
+ou utiliser un bind qui attribuera un dossier dans le conteneur a un dossier en local. (une passerelle)
 
 | Env variable | Value |
 |--------------|-------|
