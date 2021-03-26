@@ -2,11 +2,11 @@
 
 # Workshop MyNetflix part. 1
 
-*Ce workshop a pour but de vous familiariser avec Docker et Portainer en mettant en place un serveur Plex pour pouvoir visionner des medias téléchargés au préalable grâce à un Docker transmission.*
+#### *Ce workshop a pour but de vous familiariser avec Docker et Portainer en mettant en place un serveur Plex pour pouvoir visionner des medias téléchargés au préalable grâce à un Docker transmission.*
 
-**N'hésitez pas à star ⭐ ce repo si vous avez aimé le workshop!** ![](https://img.shields.io/github/stars/ajnart/mynetflix-part1?label=%E2%AD%90&style=for-the-badge?branch=master&kill_cache=1")
+### **N'hésitez pas à star ⭐ ce repo si vous avez aimé le workshop!** ![](https://img.shields.io/github/stars/ajnart/mynetflix-part1?label=%E2%AD%90&style=for-the-badge?branch=master&kill_cache=1")
 
-Ce workshop est divisé en deux parties.  
+Ce workshop est divisé en deux parties:  
 1️⃣ La première concerne l'installation d'un conteneur Docker portainer; le déploiement d'un serveur de distribution de média Plex et le déploiement d'une interface de téléchargement de torrents grâce à transmission.
 
 2️⃣ La seconde partie concerne la mise en place d'un "stack" via Dokcer-compose pour voir monter de dé-monter facilement tout nos conteneurs en une seule commande et l'installation de **sonarr/radarr/jackett** pour automatiser le téléchargement de nos médias.
@@ -59,10 +59,9 @@ Lancez maintenant Plex et rendez-vous sur [localhost:32400/web](http://localhost
 Vous pouvez maintenant rajouter du contenu en local pour tester que plex fonctionne correctement.
 
 ## Partie 2 - Transmission Web Interface
+### Nous allons maintenant nous intéressés à la partie téléchargement des medias, qui seront ensuite automatiquement ajoutés dans plex.
 
-<img src="assets/transmission.png" width="100" height="100">
-
-Nous allons maintenant nous intéressés à la partie téléchargement des medias, qui seront ensuite automatiquement ajoutés dans plex.
+<img src="assets/transmission.png" width="100" height="100"> 
 
 Déployez un conteneur Dokcer transmission avec l'image [transmission linuxserver](https://hub.docker.com/r/linuxserver/transmission)
 
@@ -76,4 +75,8 @@ Pour faciliter le travail de plex, il serait intélligent de déplacer les torre
 
 ## Conclusion
 
-Merci d'avoir suivi ce workshop ! J'espère qu'il vous à plu. Et encore une fois si c'est le cas n'hésitez pas à star le repo, ça fait toujours plaisir 😉
+### Merci d'avoir suivi ce workshop ! J'espère qu'il vous à plu. Et encore une fois si c'est le cas n'hésitez pas à star le repo, ça fait toujours plaisir 😉
+
+### Aller plus loin:
+
+Intéger transmission à votre navigateur: [addon chrome](https://chrome.google.com/webstore/detail/transmission-easy-client/cmkphjiphbjkffbcbnjiaidnjhahnned?hl=en)
