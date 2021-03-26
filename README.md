@@ -51,6 +51,7 @@ Lancez maintenant Plex et rendez-vous sur [localhost:32400/web](http://localhost
 Vous pouvez maintenant rajouter du contenu en local pour tester que plex fonctionne correctement.
 
 ## Partie 2 - Transmission Web Interface
-![](assets/transmission.png)
+
+<img src="assets/transmission.png" width="100" height="100">
 
 Nous allons maintenant nous intéressés à la partie téléchargement des medias, qui seront ensuite automatiquement ajoutés dans plex.
