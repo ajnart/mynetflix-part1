@@ -22,7 +22,8 @@ Choisissez un mot de passe administrateur et sélectionnez l'utilisation **local
 
 ✨ **Voilà !** ✨Vous avez maintenant une installation fonctionelle de portainer. 🐋
 
-### 2 - Plex // Création d'une conteneur via l'interface portainer
+### Création d'une conteneur via l'interface portainer
+#### Plex
 <img src="assets/plexlogo.jpg" width="562" height="230">
 
 Nous allons mainteannt procéder à l'installation de [plex](https://www.plex.tv/)
