@@ -6,7 +6,11 @@
 
 **N'hésitez pas à star ⭐ le repo si vous avez aimé ce workshop!** ![](https://img.shields.io/github/stars/ajnart/mynetflix-part1?label=%E2%AD%90&style=for-the-badge?branch=master&kill_cache=1")
 
-Ce workshop est divisé en deux parties. La première concerne l'installation 
+Ce workshop est divisé en deux parties. La première concerne l'installation d'un conteneur Docker portainer; le déploiement d'un serveur de distribution de média Plex et le déploiement d'une interface de téléchargement de torrents grâce à transmission.
+
+Si vous voulez prendre économiser un peu de temps, vous pouvez pré-télécharger les images que nous allons utiliser grâce aux commandes:
+``docker pull linuxserver/plex``
+``docker pull linuxserver/transmission``
 
 ## Partie 1 : Portainer et Plex
 ### 1 - Portainer
