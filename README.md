@@ -22,7 +22,7 @@ Choisissez un mot de passe administrateur et sélectionnez l'utilisation **local
 
 ✨ **Voilà !** ✨Vous avez maintenant une installation fonctionelle de portainer. 🐋
 
-### 2 - Plex
+### 2 - Plex // Création d'une conteneur via l'interface portainer
 <img src="assets/plexlogo.jpg" width="562" height="230">
 
 Nous allons mainteannt procéder à l'installation de [plex](https://www.plex.tv/)
@@ -55,3 +55,17 @@ Vous pouvez maintenant rajouter du contenu en local pour tester que plex fonctio
 <img src="assets/transmission.png" width="100" height="100">
 
 Nous allons maintenant nous intéressés à la partie téléchargement des medias, qui seront ensuite automatiquement ajoutés dans plex.
+
+Déployez un conteneur Dokcer transmission avec l'image [transmission linuxserver](https://hub.docker.com/r/linuxserver/transmission)
+
+**⚠N'oubliez pas de publier le port 9091 pour avoir accès au WebUI (interface de téléchargement)**
+
+**⚠ N'oubliez pas de rajouter vos binds / volumes médias dans la config du contenur. Sinon vous n'aurez pas d'endroit où stocker vos torrents.**
+
+Si tout c'est bien passé, vous deviez maintenant être en mesure d'ajouter des torrents qui, une fois téléchargés, seront automatiquement intégrés à Plex.
+
+Pour faciliter le travail de plex, il serait intélligent de déplacer les torrents par type et par état (en cours / terminés.)
+
+## Conclusion
+
+Merci d'avoir suivi ce workshop ! J'espère qu'il vous à plu. Et encore une fois si c'est le cas n'hésitez pas à star le repo, ça fait toujours plaisir 😉
