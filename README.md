@@ -12,8 +12,9 @@ Ce workshop est divisé en deux parties:
 2️⃣ La seconde partie concerne la mise en place d'un "stack" via Dokcer-compose pour voir monter de dé-monter facilement tout nos conteneurs en une seule commande et l'installation de **sonarr/radarr/jackett** pour automatiser le téléchargement de nos médias.
 
 >Si vous voulez prendre économiser un peu de temps, vous pouvez pré-télécharger les images que nous allons utiliser grâce aux commandes:
+
 ``docker pull linuxserver/plex``  
-``docker pull linuxserver/transmission``
+``docker pull linuxserver/transmission``  
 
 ## Partie 1 : Portainer et Plex
 ### 1 - Portainer
