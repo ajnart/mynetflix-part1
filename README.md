@@ -76,7 +76,7 @@ Pour faciliter le travail de plex, il serait intélligent de déplacer les torre
 
 ## Conclusion
 
-### Merci d'avoir suivi ce workshop ! J'espère qu'il vous à plu. Et encore une fois si c'est le cas n'hésitez pas à star le repo, ça fait toujours plaisir 😉
+### Merci d'avoir suivi ce workshop ! J'espère qu'il vous à plu. Si c'est le cas n'hésitez pas à star le repo, ça fait toujours plaisir 😉
 
 ### Aller plus loin:
 
