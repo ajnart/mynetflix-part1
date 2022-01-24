@@ -40,8 +40,6 @@ Rendez-vous dans la section "Containers" de portainer ![](assets/containers.png)
 
 Pour savoir quelles variables d'environnement utiliser, utilisez la [page wiki linuxserver jellyfin](https://hub.docker.com/r/linuxserver/jellyfin)
 
-**N'oubliez pas de publier le port 32400 !**
-
 Vous pouvez créer un volume pour stocker vos données (Portainer -> Volumes -> Create)
 ou utiliser un bind qui attribuera un dossier dans le conteneur a un dossier en local. (une passerelle)
 
