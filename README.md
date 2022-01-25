@@ -34,29 +34,42 @@ Choisissez un mot de passe administrateur et sélectionnez l'utilisation **local
 #### Jellyfin
 <img src="assets/jellyfin.svg" width="562" height="230">
 
-Nous allons mainteannt procéder à l'installation de [jellyfin](https://jellyfin.org/)
+Nous allons mainteannt procéder à l'installation de **jellyfin**
 
 Rendez-vous dans la section "Containers" de portainer ![](assets/containers.png)
+et cliquez sur "Add a container", saisissez bien l'image en haut de form, et descendez ensuite vers "Volumes" pour créer les volumes/binds de votre contenur.
 
-Pour savoir quelles variables d'environnement utiliser, utilisez la [page wiki linuxserver jellyfin](https://hub.docker.com/r/linuxserver/jellyfin)
 
 Vous pouvez créer un volume pour stocker vos données (Portainer -> Volumes -> Create)
 ou utiliser un bind qui attribuera un dossier dans le conteneur a un dossier en local. (une passerelle)
 
-| Env variable | Value |
-|--------------|-------|
-| VERSION      | docker|
+**N'oubliez pas d'ouvrir le port 8096 en UDP via "bind a port" sur l'interface Portainer**
 
 
-| Volume       |  Value                | Type
-|--------------|-----------------------|------
-| /config      | /home/pi/.config      | Volume
-| /tv          | /home/pi/media/tv     | Volume
-| /movies      | /home/pi/media/movies | Volume
+| Local port   | Container port |
+|--------------|----------------|
+| 8096         | 8096           |
+
+
+Vous pouvez aussi spécifier des variables d'environnment (TimeZone, UserGroup, ...)
+
+Pour savoir quelles variables d'environnement utiliser, utilisez la [page wiki linuxserver jellyfin](https://hub.docker.com/r/linuxserver/jellyfin)
+
+**Une fois cette configuration terminée**, cliquez sur "Deploy this container" pour créer le conteneur Jellyfin!
+
+
+Un exemple de volumes pour ma configuration: 
+Içi, notez que je définis des chemins dans le conteneurs qui pointent (bind) vers des chemins locaux, pour que le conteneur ait accès à certains fichiers en local.
+
+| Container path       |  Local pat                             | Type
+|----------------------|----------------------------------------|------
+| /config              | /home/pi/.config/server/jellyfin       | Bind
+| /tv                  | /home/pi/media/tv                      | Bind
+| /movies              | /home/pi/media/movies                  | Bind
 
 Si vous ne savez pas quoi remplir, ne vous en faites pas. Portainer laisse la possibilité de modifier un conteneur existant.
 
-Lancez maintenant Jellyfin et rendez-vous sur [localhost:32400/web](http://localhost:32400/web) pour configurer la configuration de jellyfin. Créez un compte et ajoutez vos dossiers media dans la librairie jellyfin. 
+Lancez maintenant Jellyfin et rendez-vous sur [localhost:8096](http://localhost:8096) pour configurer la configuration de jellyfin. Créez un compte et ajoutez vos dossiers media dans la librairie jellyfin. 
 Vous pouvez maintenant rajouter du contenu en local pour tester que jellyfin fonctionne correctement.
 
 ## Partie 2 - Transmission Web Interface
